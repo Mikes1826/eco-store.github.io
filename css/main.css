@@ -1,0 +1,458 @@
+html {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  background-color: #FFEFE7;
+  font-family: "IBM Plex Sans", sans-serif;
+}
+
+nav {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: space-around;
+}
+@media screen and (min-width: 768px) {
+  nav {
+    justify-content: space-between;
+  }
+}
+nav p {
+  font-size: 2rem;
+  line-height: 18px;
+  font-weight: 500;
+  color: #7c6a0a;
+  align-self: center;
+}
+@media screen and (min-width: 768px) {
+  nav p {
+    margin-left: 40px;
+  }
+}
+@media screen and (min-width: 1020px) {
+  nav p {
+    font-size: 2.6rem;
+  }
+}
+nav .button-menu {
+  display: flex;
+  align-content: center;
+}
+@media screen and (min-width: 768px) {
+  nav .button-menu {
+    margin-right: 40px;
+  }
+}
+nav .button-menu button {
+  background: none;
+  border-style: none;
+}
+@media screen and (min-width: 1020px) {
+  nav .button-menu button svg {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+main {
+  background-color: #FFEFE7;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .article {
+  width: 90%;
+}
+@media screen and (min-width: 768px) {
+  main .article {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    gap: 20px;
+    margin-top: 20px;
+  }
+}
+@media screen and (min-width: 768px) {
+  main .article .img-section {
+    width: 40%;
+  }
+}
+main .article .img-section img {
+  width: 100%;
+  max-width: 550px;
+  height: 362px;
+  max-height: 686px;
+  border-radius: 8px;
+  margin: 10px 0;
+  background-size: cover;
+}
+main .article .impact-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media screen and (min-width: 768px) {
+  main .article .impact-section {
+    display: flex;
+    align-items: flex-start;
+    width: 50%;
+    padding-top: 20px;
+    gap: 20px;
+  }
+}
+main .article .impact-section h1 {
+  font-size: 2.8rem;
+  line-height: 20px;
+  color: #7c6a0a;
+}
+main .article .impact-section p {
+  font-size: 1.2rem;
+  line-height: 14px;
+  color: #7c6a0a;
+}
+@media screen and (min-width: 768px) {
+  main .article .impact-section p {
+    font-size: 1.4rem;
+  }
+}
+@media screen and (min-width: 1020px) {
+  main .article .impact-section p {
+    font-size: 1.8rem;
+  }
+}
+main .article .impact-section button {
+  width: 60%;
+  height: 42px;
+  background-color: #fa9500;
+  border: none;
+  border-radius: 20px;
+  color: white;
+  font-weight: bold;
+  align-self: center;
+  margin: 20px 0;
+  cursor: pointer;
+}
+@media screen and (min-width: 768px) {
+  main .article .impact-section button {
+    margin: 0;
+    align-self: flex-start;
+  }
+}
+@media screen and (min-width: 1020px) {
+  main .article .impact-section button {
+    height: 48px;
+    font-size: 1.8rem;
+  }
+}
+main .produc-section {
+  width: 90%;
+  height: auto;
+  margin-top: 20px;
+}
+main .produc-section .produc-section--healthcare {
+  margin-bottom: 50px;
+}
+main .produc-section .produc-section--healthcare h2 {
+  font-size: 2.2rem;
+  color: #7c6a0a;
+  font-weight: 500;
+  line-height: 22px;
+  margin: 20px 0;
+  padding-left: 10px;
+}
+main .produc-section .produc-section--healthcare .healthcare-cards--container {
+  width: 100%;
+  height: 320px;
+  display: flex;
+  gap: 20px;
+  overflow-x: scroll;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x proximity;
+}
+@media screen and (min-width: 1020px) {
+  main .produc-section .produc-section--healthcare .healthcare-cards--container {
+    flex-wrap: wrap;
+    height: auto;
+    justify-content: space-around;
+  }
+}
+main .produc-section .produc-section--healthcare .healthcare-cards--container .healthcare-detail--card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  scroll-snap-align: center;
+  width: 80%;
+  min-width: 180px;
+  max-width: 200px;
+  height: 320px;
+  margin-right: 20px;
+  background-color: #FFDAC6;
+  border-radius: 6px;
+}
+@media screen and (min-width: 1020px) {
+  main .produc-section .produc-section--healthcare .healthcare-cards--container .healthcare-detail--card {
+    margin-bottom: 30px;
+  }
+}
+main .produc-section .produc-section--healthcare .healthcare-cards--container .healthcare-detail--card .svg {
+  align-self: flex-end;
+  margin: 10px 10px 10px 0;
+  width: 18px;
+  height: 18px;
+}
+main .produc-section .produc-section--healthcare .healthcare-cards--container .healthcare-detail--card img {
+  width: 135px;
+  height: 165px;
+  margin: 0 0 20px 0;
+  border-radius: 6px;
+}
+main .produc-section .produc-section--healthcare .healthcare-cards--container .healthcare-detail--card h3 {
+  margin: 0 0 0 20px;
+  font-size: 1.6rem;
+  color: #7c6a0a;
+  line-height: 17px;
+  align-self: flex-start;
+}
+main .produc-section .produc-section--healthcare .healthcare-cards--container .healthcare-detail--card p {
+  padding: 0 20px;
+  margin: 0;
+  font-size: 1.2rem;
+  color: #7c6a0a;
+}
+main .produc-section .produc-section--furniture {
+  margin-bottom: 50px;
+}
+main .produc-section .produc-section--furniture h2 {
+  font-size: 2.2rem;
+  color: #7c6a0a;
+  font-weight: 500;
+  line-height: 22px;
+  margin: 20px 0;
+  padding-left: 10px;
+}
+main .produc-section .produc-section--furniture .furniture-cards--container {
+  width: 100%;
+  height: 320px;
+  display: flex;
+  gap: 20px;
+  overflow-x: scroll;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x proximity;
+}
+@media screen and (min-width: 1020px) {
+  main .produc-section .produc-section--furniture .furniture-cards--container {
+    flex-wrap: wrap;
+    height: auto;
+    justify-content: space-around;
+  }
+}
+main .produc-section .produc-section--furniture .furniture-cards--container .furniture-detail--card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  scroll-snap-align: center;
+  width: 80%;
+  min-width: 180px;
+  max-width: 200px;
+  height: 300px;
+  margin-right: 20px;
+  background-color: #BABD8D;
+  border-radius: 6px;
+}
+@media screen and (min-width: 1020px) {
+  main .produc-section .produc-section--furniture .furniture-cards--container .furniture-detail--card {
+    margin-bottom: 30px;
+  }
+}
+main .produc-section .produc-section--furniture .furniture-cards--container .furniture-detail--card svg {
+  align-self: flex-end;
+  margin: 10px 10px 10px 0;
+  width: 18px;
+  height: 18px;
+}
+main .produc-section .produc-section--furniture .furniture-cards--container .furniture-detail--card img {
+  width: 135px;
+  height: 165px;
+  margin: 0 0 20px 0;
+  border-radius: 6px;
+}
+main .produc-section .produc-section--furniture .furniture-cards--container .furniture-detail--card h3 {
+  margin: 0 0 0 20px;
+  font-size: 1.6rem;
+  color: white;
+  line-height: 17px;
+  align-self: flex-start;
+}
+main .produc-section .produc-section--furniture .furniture-cards--container .furniture-detail--card p {
+  padding: 0 20px;
+  margin: 0;
+  font-size: 1.2rem;
+  color: white;
+  font-weight: 500;
+}
+main .info--section {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .info--section .about-us h2 {
+  font-size: 2.2rem;
+  color: #7c6a0a;
+  font-weight: 500;
+  line-height: 22px;
+  margin: 20px 0;
+  padding-left: 10px;
+}
+@media screen and (min-width: 768px) {
+  main .info--section .about-us .about-us--info {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    margin-top: 20px;
+  }
+}
+main .info--section .about-us .about-us--info .earth {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media screen and (min-width: 768px) {
+  main .info--section .about-us .about-us--info .earth {
+    width: 40%;
+    flex-direction: row;
+  }
+}
+main .info--section .about-us .about-us--info .earth img {
+  width: 120px;
+  height: 120px;
+  margin: 20px 0;
+}
+main .info--section .about-us .about-us--info .earth p {
+  font-size: 1.6rem;
+  line-height: 18px;
+  color: #e86424;
+  font-weight: 500;
+  text-align: center;
+}
+main .info--section .about-us .about-us--info .innovation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media screen and (min-width: 768px) {
+  main .info--section .about-us .about-us--info .innovation {
+    width: 40%;
+    flex-direction: row;
+  }
+}
+main .info--section .about-us .about-us--info .innovation img {
+  width: 120px;
+  height: 120px;
+  margin: 20px 0;
+}
+main .info--section .about-us .about-us--info .innovation p {
+  font-size: 1.6rem;
+  line-height: 18px;
+  color: #e86424;
+  font-weight: 500;
+  text-align: center;
+}
+main .info--section .gallery {
+  margin-bottom: 30px;
+  width: 100%;
+  height: 100%;
+}
+main .info--section .gallery h2 {
+  font-size: 2.2rem;
+  color: #7c6a0a;
+  font-weight: 500;
+  line-height: 22px;
+  margin: 20px 0;
+  padding-left: 10px;
+}
+main .info--section .gallery .gallery-image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media screen and (min-width: 1020px) {
+  main .info--section .gallery .gallery-image {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+main .info--section .gallery .gallery-image img {
+  width: 280px;
+  height: 280px;
+  margin: 30px 0;
+  border-radius: 15px;
+}
+main .info--section .location h2 {
+  font-size: 2.2rem;
+  color: #7c6a0a;
+  font-weight: 500;
+  line-height: 22px;
+  margin: 20px 0;
+  padding-left: 10px;
+  color: #e86424;
+}
+main .info--section .location .map {
+  width: 100%;
+  height: 300px;
+  min-width: 280px;
+  background-image: url(/assets/img/map.png);
+  background-size: cover;
+  background-position: center;
+  margin: 30px auto;
+}
+main .info--section .location p {
+  font-size: 2.2rem;
+  color: #7c6a0a;
+  font-weight: 500;
+  line-height: 22px;
+  margin: 20px 0;
+  padding-left: 10px;
+  font-size: 1.4rem;
+  color: #e86424;
+}
+
+.footer {
+  width: 100%;
+  height: auto;
+  background-color: #fa9500;
+}
+.footer h3 {
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 18px;
+  color: white;
+  margin-left: 20px;
+  padding-top: 20px;
+}
+.footer p {
+  font-size: 1.4rem;
+  font-weight: 300;
+  line-height: 16px;
+  color: white;
+  margin-left: 20px;
+  padding-top: 5px;
+}
+.footer .social-media {
+  margin-left: 20px;
+  display: flex;
+  gap: 10px;
+  width: 80%;
+  height: 50px;
+}
+.footer .social-media img {
+  width: 30px;
+  height: 30px;
+}/*# sourceMappingURL=main.css.map */
